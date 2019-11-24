@@ -1,0 +1,22 @@
+version: "3"
+services:
+    frontend:
+        container_name: Container
+        build:
+            context: ./client
+            dockerfile: Dockerfile
+        image: .
+        ports:
+            - "3000:3000"
+        volumes:
+            - ./client:.
+    backend:
+        container_name: Container
+        build:
+            context: ./server
+            dockerfile: Dockerfile
+        image: .
+        ports:
+            - "5000:5000"
+        volumes:
+            - ./server:.

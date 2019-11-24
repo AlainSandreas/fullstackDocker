@@ -1,0 +1,36 @@
+{
+  "name": "fullstack-framework",
+  "version": "1.0.0",
+  "description": "This is a clean framework to start dev in Node.js and React.js with concurrently",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm start\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mehdiBell/fullstack-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mehdiBell/fullstack-framework/issues"
+  },
+  "homepage": "https://github.com/mehdiBell/fullstack-framework#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "config": "^3.2.4",
+    "express": "^4.17.1",
+    "express-validator": "^6.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.7.7",
+    "nodemailer": "^6.3.1",
+    "react-router-dom": "^5.1.2",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4"
+  }
+}
